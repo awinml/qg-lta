@@ -9,7 +9,13 @@ from spacy.lang.en import English
 import config
 
 tokenizer = English()
+<<<<<<< HEAD
 tokenizer.add_pipe(tokenizer.create_pipe("sentencizer"))
+=======
+# Changed add_pipe(tokenizer.create_pipe("sentencizer"))
+# To tokenizer.add_pipe("sentencizer")
+tokenizer.add_pipe("sentencizer")
+>>>>>>> main
 device = torch.device("cuda" if config.cuda else "cpu")
 
 
