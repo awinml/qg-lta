@@ -1,12 +1,7 @@
 import os
 from tqdm import tqdm
 import torch
-<<<<<<< HEAD
-from torchtext import data, vocab, datasets
-=======
 from torchtext import data, vocab
->>>>>>> main
-
 from utils import word_tokenize, feature_tokenize
 import config
 
