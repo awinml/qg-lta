@@ -11,10 +11,10 @@ idna==2.8
 jsonschema==2.6.0
 Markdown==3.1
 murmurhash==1.0.2
-# numpy changed version from 1.16.2 to 1.22.4
-numpy==1.22.4
-# pandas changed version from 0.24.2 to 1.4.3
-pandas==1.4.3
+# numpy changed version from 1.16.2 to 1.21.6
+numpy==1.21.6
+# pandas changed version from 0.24.2 to 1.3.5
+pandas==1.3.5
 # Pillow changed version from 6.2.0 to 8.4.0
 Pillow==8.4.0
 plac==0.9.6
