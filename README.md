@@ -45,10 +45,11 @@ The NewsQA Data has been downloaded in the data/newsqa-data-v1 directory for fur
 `data/newsqa/newsqa-data-v1` directories.
 * Download GloVE word vectors: https://nlp.stanford.edu/projects/glove/ and extract the files in the `data/glove.6b` directory.
 * Put the NewsQA data file `combined-newsqa-data-v1.json` file in the `data/newsqa/newsqa-data-v1` directory. 
-* Modify the `config.py` file to set up the paths (if the paths are different) where your GloVE, SquAD and NewsQA datasets, and where your models will be saved (output directory).
+* Modify the `config.py` file to set up the paths (if the paths are different) where your GloVE, SquAD and NewsQA datasets, and where your models will be saved (output directory). Also set gpu=False if GPU is not present. 
 * Create a Python virtual environment, source to it: `mkvirualenv qa-env ; workon qa-env` if you use virtualenvwrapper
 * The versions of many dependencies in the requirements.txt have been bumped up for better compatibility. The changes have been mentioned in the file.
 * Install the dependencies: `pip install -r requirements.txt ; python -m spacy download en`
+* Run `python config.py` to update directory paths and set GPU parameter for training.
 * Run `python make_dataset.py` to download SquAD dataset, and join SQuAD and NewsQA datasets into a single file
 * Run `python preprocessing.py` to preprocess the data
 * Run `python train.py` to train the model with hyper-parameters found in `config.py`
