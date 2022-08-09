@@ -14,14 +14,15 @@ Before running the following commands to train your model, you need to download 
 * Download the tar.gz file for the questions and answers from [maluuba_newsqa_dl](https://msropendata.com/datasets/939b1042-6402-4697-9c15-7a28de7e1321) to the maluuba/newsqa folder. No need to extract anything.
 * Download the CNN stories from [cnn_stories](http://cs.nyu.edu/~kcho/DMQA/) to the maluuba/newsqa folder.
 * Use Python 2.7 to package the dataset (Python 2.7):
-** Create an Python 2.7 environment with pandas>=0.19.2.
-** Open newsqa/maluuba/newsqa/data_generator.py and comment last four lines:
+    * Create an Python 2.7 environment with pandas>=0.19.2.
+    * Open newsqa/maluuba/newsqa/data_generator.py and comment last four lines:
 ```
     # tokenized_data_path = os.path.join(dir_name, 'newsqa-data-tokenized-v1.csv')
     # tokenize(output_path=tokenized_data_path)
     # split_data(dataset_path=tokenized_data_path)
     # simplify(output_dir_path='split_data')
-``` ** This will make sure that we just create the data without tokenization. The tokenization step requires JAVA. This will eliminate that dependency.
+``` 
+    * This will make sure that we just create the data without tokenization. The tokenization step requires JAVA. This will eliminate that dependency.
 
 
 #### Python 2.7 Workaround using Google Collab Instance:
