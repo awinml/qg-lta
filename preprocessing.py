@@ -85,7 +85,7 @@ class DataPreprocessor(object):
         val_dataset = data.Dataset(fields=fields, examples=val_examples)
 
         # Loading GloVE vectors
-        vec = vocab.Vectors(os.path.join(glove_dir, "glove.6B.{}d.txt".format(config.word_embedding_size)))
+        vec = vocab.Vectors(name="glove.6B.{}d.txt".format(config.word_embedding_size), cache=".vector_cache", url="https://nlp.stanford.edu/data/glove.6B.zip")
 
         # Building field vocabulary
         self.src_field.build_vocab(train_dataset, vectors=vec, max_size=config.in_vocab_size)

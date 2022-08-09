@@ -4,6 +4,7 @@
 /data/glove.6B
 /data/output
 /data/squad
+.vector_cache
 
 # Local plan, will later go in the readme
 plan.txt

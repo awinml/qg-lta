@@ -43,7 +43,7 @@ device = torch.device("cuda" if hyper_params["cuda"] else "cpu")
 torch.manual_seed(42)
 
 # Define a path to save experiment logs
-experiment_path = "output/{}".format(config.exp)
+experiment_path = "data/output/{}".format(config.exp)
 if not os.path.exists(experiment_path):
     os.mkdir(experiment_path)
 
