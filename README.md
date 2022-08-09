@@ -3,9 +3,17 @@
 https://github.com/GauthierDmn/question_generation
 
 Code rewritten to be compatible with Python 3.x.
+# Run the model from this repository:
+* Install the dependencies: `pip install -r requirements.txt ; python -m spacy download en`
+* Run `python config.py` to update directory paths and don't forget set GPU parameter as True/False in file for training.
+* Run `python make_dataset.py` to download SquAD dataset, and join SQuAD and NewsQA datasets into a single file
+* Run `python preprocessing.py` to preprocess the data
+* Run `python train.py` to train the model with hyper-parameters found in `config.py`
+* Run `python eval.py` on a test file to generate your own questions!
 
 
-# Set-Up
+
+# Documentation for Replication and Improvement
 ## Downloading NewsQA Dataset
 Before running the following commands to train your model, you need to download the NewsQA dataset manually [here](https://github.com/Maluuba/newsqa). Follow the steps below to save it in a JSON file.
 
@@ -25,7 +33,6 @@ Before running the following commands to train your model, you need to download 
     * This will make sure that we just create the data without tokenization. The tokenization step requires JDK. This will eliminate that dependency.
     
 
-
 #### Python 2.7 Workaround using Google Collab Instance:
 A simple way to run python 2.7 is to utilize Google Collab and its linux instance that has both Python3 and Python2 installed. 
 The runtime will default to Python 3.x but we can still access Python 2.x. through bash commands. 
@@ -34,7 +41,7 @@ The runtime will default to Python 3.x but we can still access Python 2.x. throu
 
 The NewsQA Data has been downloaded in the data/newsqa-data-v1 directory for further use.
 
-## Running the model
+## Steps followed to replicate and improve
 
 * Clone this repository : [here](https://github.com/GauthierDmn/question_generation)
 * Create a data directory: `mkdir data`
@@ -48,10 +55,3 @@ The NewsQA Data has been downloaded in the data/newsqa-data-v1 directory for fur
 * Modify the `config.py` file to set up the paths (if the paths are different) where your GloVE, SquAD and NewsQA datasets, and where your models will be saved (output directory). Also set gpu=False if GPU is not present. 
 * Create a Python virtual environment, source to it: `mkvirualenv qa-env ; workon qa-env` if you use virtualenvwrapper
 * The versions of many dependencies in the requirements.txt have been bumped up for better compatibility. The changes have been mentioned in the file.
-* Install the dependencies: `pip install -r requirements.txt ; python -m spacy download en`
-* Run `python config.py` to update directory paths and set GPU parameter for training.
-* Run `python make_dataset.py` to download SquAD dataset, and join SQuAD and NewsQA datasets into a single file
-* Run `python preprocessing.py` to preprocess the data
-* Run `python train.py` to train the model with hyper-parameters found in `config.py`
-* Run `python eval.py` on a test file to generate your own questions!
-
