@@ -16,12 +16,14 @@ Before running the following commands to train your model, you need to download 
 * Use Python 2.7 to package the dataset (Python 2.7):
     * Create an Python 2.7 environment with pandas>=0.19.2.
     * Open newsqa/maluuba/newsqa/data_generator.py and comment last four lines:
-```   # tokenized_data_path = os.path.join(dir_name, 'newsqa-data-tokenized-v1.csv')
-    # tokenize(output_path=tokenized_data_path)
-    # split_data(dataset_path=tokenized_data_path)
-    # simplify(output_dir_path='split_data')```
+      ```
+          # tokenized_data_path = os.path.join(dir_name, 'newsqa-data-tokenized-v1.csv')
+          # tokenize(output_path=tokenized_data_path)
+          # split_data(dataset_path=tokenized_data_path)
+          # simplify(output_dir_path='split_data')
+      ```
+    * This will make sure that we just create the data without tokenization. The tokenization step requires JDK. This will eliminate that dependency.
     
-    * This will make sure that we just create the data without tokenization. The tokenization step requires JAVA. This will eliminate that dependency.
 
 
 #### Python 2.7 Workaround using Google Collab Instance:
@@ -38,7 +40,9 @@ The NewsQA Data has been downloaded in the data/newsqa-data-v1 directory for fur
 * Create a data directory: `mkdir data`
 * Create a directory for your experiments, logs and model weights: `mkdir data/output`
 * By default the GloVE, SquAD and NewsQA datasets are to be stored under 
-`data/glove.6b`, `data/squad`, `data/newsqa/newsqa-data-v1`.
+`data/glove.6b`, 
+`data/squad`, 
+`data/newsqa/newsqa-data-v1` directories.
 * Download GloVE word vectors: https://nlp.stanford.edu/projects/glove/ and extract the files in the `data/glove.6b` directory.
 * Put the NewsQA data file `combined-newsqa-data-v1.json` file in the `data/newsqa/newsqa-data-v1` directory. 
 * Modify the `config.py` file to set up the paths (if the paths are different) where your GloVE, SquAD and NewsQA datasets, and where your models will be saved (output directory).
