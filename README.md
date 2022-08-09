@@ -21,13 +21,14 @@ Before running the following commands to train your model, you need to download 
     # tokenize(output_path=tokenized_data_path)
     # split_data(dataset_path=tokenized_data_path)
     # simplify(output_dir_path='split_data')
-```
-** This will make sure that we just create the data without tokenization. The tokenization step requires JAVA. This will eliminate that dependency.
+``` ** This will make sure that we just create the data without tokenization. The tokenization step requires JAVA. This will eliminate that dependency.
+
 
 #### Python 2.7 Workaround using Google Collab Instance:
 A simple way to run python 2.7 is to utilize Google Collab and its linux instance that has both Python3 and Python2 installed. 
 The runtime will default to Python 3.x but we can still access Python 2.x. through bash commands. 
-Follow the above steps. Upload the new repo to Drive and run the following notebook to generate the data: [Collab Notebook NewsQA Download](https://colab.research.google.com/drive/1KVKnLXeicWt1qYzBoblqak-ZM6EQ6l-b?usp=sharing)
+* Follow the above steps. 
+* Upload the new repository to Drive and run the following notebook to generate the data: [Collab Notebook NewsQA Download](https://colab.research.google.com/drive/1KVKnLXeicWt1qYzBoblqak-ZM6EQ6l-b?usp=sharing)
 
 The NewsQA Data has been downloaded in the data/newsqa-data-v1 directory for further use.
 
