@@ -16,10 +16,11 @@ Before running the following commands to train your model, you need to download 
 * Use Python 2.7 to package the dataset (Python 2.7):
     * Create an Python 2.7 environment with pandas>=0.19.2.
     * Open newsqa/maluuba/newsqa/data_generator.py and comment last four lines:
-`   # tokenized_data_path = os.path.join(dir_name, 'newsqa-data-tokenized-v1.csv')
+```   # tokenized_data_path = os.path.join(dir_name, 'newsqa-data-tokenized-v1.csv')
     # tokenize(output_path=tokenized_data_path)
     # split_data(dataset_path=tokenized_data_path)
-    # simplify(output_dir_path='split_data')` 
+    # simplify(output_dir_path='split_data')```
+    
     * This will make sure that we just create the data without tokenization. The tokenization step requires JAVA. This will eliminate that dependency.
 
 
