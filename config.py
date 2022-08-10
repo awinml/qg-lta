@@ -34,7 +34,7 @@ drop_prob = 0.3
 start_decay_epoch = 8
 decay_rate = 0.5
 use_answer = True
-cuda = True
+cuda = False
 pretrained = False
 
 # eval hyper-parameters

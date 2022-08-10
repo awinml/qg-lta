@@ -30,11 +30,12 @@ srsly==1.0.1
 tensorboard==1.13.1
 tensorboardX==1.6
 thinc==7.0.4
-# torch changed version from 1.1.0 to 1.4.0
-torch==1.4.0
+# pip3 install torch==1.8.2 torchvision==0.9.2 --extra-index-url https://download.pytorch.org/whl/lts/1.8/cu111
+# torch changed version from 1.1.0 to 1.8.2
+torch==1.8.2
 torchtext==0.4.0
-# torchvision changed version from 0.3.0 to 0.5.0
-torchvision==0.5.0
+# torchvision changed version from 0.3.0 to 0.9.2
+torchvision==0.9.2
 tqdm==4.30.0
 urllib3==1.24.1
 wasabi==0.2.1
