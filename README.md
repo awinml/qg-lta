@@ -11,7 +11,7 @@ Code rewritten to be compatible with Python 3.x.
 `data/glove.6b`, 
 `data/squad`, 
 `data/newsqa/newsqa-data-v1` directories.
-* Download GloVE word vectors: https://nlp.stanford.edu/projects/glove/ and extract the files in the `data/glove.6b` directory.
+* Download GloVE word vectors: https://nlp.stanford.edu/data/wordvecs/glove.6B.zip and extract the files in the `data/glove.6b` directory.
 * Put the NewsQA data file `combined-newsqa-data-v1.json` file in the `data/newsqa/newsqa-data-v1` directory. 
 * Modify the `config.py` file to set up the paths (if the paths are different) where your GloVE, SquAD and NewsQA datasets, and where your models will be saved (output directory). Also set gpu=False if GPU is not present. 
 * Create a Python virtual environment, source to it: `mkvirualenv qa-env ; workon qa-env` if you use virtualenvwrapper
