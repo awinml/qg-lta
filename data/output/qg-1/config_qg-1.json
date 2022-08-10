@@ -1,0 +1,1 @@
+{"preprocessing": {"word_embedding_size": 300, "answer_embedding_size": 2, "max_len_context": 100, "max_len_question": 20}, "model": {"num_epochs": 15, "batch_size": 64, "learning_rate": 1.0, "hidden_size": 600, "n_layers": 2, "drop_prob": 0.3, "start_decay_epoch": 8, "decay_rate": 0.5, "use_answer": true, "cuda": false, "pretrained": false}}

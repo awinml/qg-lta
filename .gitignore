@@ -2,7 +2,7 @@
 /data/newsqa/newsqa-data-v1/train
 /data/newsqa/newsqa-data-v1/dev
 /data/glove.6B
-/data/output
+#/data/output
 /data/squad
 .vector_cache
 
