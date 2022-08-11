@@ -23,6 +23,8 @@ Code rewritten to be compatible with Python 3.x.
 * Run `python train.py` to train the model with hyper-parameters found in `config.py`
 * Run `python eval.py` on a test file to generate your own questions!
 
+Colab notebook running this code can be found here : [QG Model Colab](https://colab.research.google.com/drive/1Hd4G6OMjtPrGITSwWJ2wAk0pzfLfVftu?usp=sharing)
+
 # Documentation for Replication and Improvement
 ## Downloading NewsQA Dataset
 Before running the following commands to train your model, you need to download the NewsQA dataset manually [here](https://github.com/Maluuba/newsqa). Follow the steps below to save it in a JSON file.
@@ -44,9 +46,9 @@ Before running the following commands to train your model, you need to download 
     
 
 #### Python 2.7 Workaround using Google Collab Instance:
-A simple way to run python 2.7 is to utilize Google Collab and its linux instance that has both Python3 and Python2 installed. 
+A simple way to run python 2.7 is to utilize Google Colab and its linux instance that has both Python3 and Python2 installed. 
 The runtime will default to Python 3.x but we can still access Python 2.x. through bash commands. 
 * Follow the above steps. 
-* Upload the new repository to Drive and run the following notebook to generate the data: [Collab Notebook NewsQA Download](https://colab.research.google.com/drive/1KVKnLXeicWt1qYzBoblqak-ZM6EQ6l-b?usp=sharing)
+* Upload the new repository to Drive and run the following notebook to generate the data: [Colab Notebook NewsQA Download](https://colab.research.google.com/drive/1KVKnLXeicWt1qYzBoblqak-ZM6EQ6l-b?usp=sharing)
 
 The NewsQA Data has been downloaded in the data/newsqa-data-v1 directory for further use.
