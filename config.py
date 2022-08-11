@@ -21,8 +21,8 @@ min_len_question = 5
 max_len_question = 20
 word_embedding_size = 300
 answer_embedding_size = 2
-in_vocab_size = 45000
-out_vocab_size = 28000
+in_vocab_size = 400000 #45000
+out_vocab_size = 400000 #45000
 
 # training hyper-parameters
 num_epochs = 15
@@ -34,13 +34,13 @@ drop_prob = 0.3
 start_decay_epoch = 8
 decay_rate = 0.5
 use_answer = True
-cuda = False
+cuda = True
 pretrained = False
 
 # eval hyper-parameters
 eval_batch_size = 1
 min_len_sentence = 5
-top_k = 0.
+top_k = 0.0
 top_p = 0.9
 temperature = 0.7
 decode_type = "topk"
