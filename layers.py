@@ -47,8 +47,8 @@ class Encoder(nn.Module):
 
     def forward(self, x, lengths, y=None):
         x = self.embedding(x, y)
-
-        x = pack_padded_sequence(x, lengths, batch_first=True)
+        # Converted lengths to cpu tensor to support latest pytorch version
+        x = pack_padded_sequence(x, lengths.to('cpu'), batch_first=True)
 
         # Apply RNN
         x, (hidden, cell) = self.rnn(x)  # (batch_size, seq_len, 2 * hidden_size)
