@@ -7,6 +7,7 @@ import operator
 from utils import sample_sequence, BeamSearchNode, Beam
 import config
 
+device = torch.device("cuda" if config.cuda else "cpu")
 
 class Embedding(nn.Module):
     def __init__(self, word_vectors, padding_idx, drop_prob):
@@ -16,7 +17,7 @@ class Embedding(nn.Module):
         self.f_embed = nn.Embedding(4, config.answer_embedding_size, padding_idx=padding_idx)
 
     def forward(self, x, y=None):
-        emb = self.w_embed(x)
+        emb = self.w_embed(x.to(device))
         if y is not None:
             f_emb = self.f_embed(y)
             emb = torch.cat((emb, f_emb), dim=-1)
@@ -110,8 +111,8 @@ class Decoder(nn.Module):
 
             out, probs = sample_sequence(out, self.top_k, self.top_p, self.temperature, False)
             if t < self.min_len_sentence and out.item() in self.special_tokens_ids:
-                while out.item() in self.special_tokens_ids:
-                    out = torch.multinomial(probs, num_samples=1)
+                #while out.item() in self.special_tokens_ids:
+                out = torch.multinomial(probs, num_samples=1)
 
             if out.item() in self.special_tokens_ids:
                 return outputs
