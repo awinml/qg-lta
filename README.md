@@ -2,6 +2,9 @@
 
 https://github.com/GauthierDmn/question_generation
 
+Original Paper: (here)[https://arxiv.org/abs/1705.00106]
+Original Github Repo For Paper: (based on OpenNMT-py) https://github.com/xinyadu/nqg
+
 Code rewritten to be compatible with Python 3.x.
 # Run the model from this repository:
 * Clone this repository
