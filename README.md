@@ -1,12 +1,12 @@
 # Neural Question Generation: Learning to Ask
 
-https://github.com/GauthierDmn/question_generation
+Colab notebook running this code can be found here : [QG Model Colab](https://colab.research.google.com/drive/1Hd4G6OMjtPrGITSwWJ2wAk0pzfLfVftu?usp=sharing) 
+
+Orginal Code: https://github.com/GauthierDmn/question_generation
 
 Original Paper: https://arxiv.org/abs/1705.00106
 
 Original Github Repo For Paper (based on OpenNMT-py): https://github.com/xinyadu/nqg
- 
-
 
 Code has been rewritten to be compatible with Python 3.x. and Pytorch 1.8.2 LTS
 # Run the model from this repository:
@@ -28,8 +28,6 @@ Code has been rewritten to be compatible with Python 3.x. and Pytorch 1.8.2 LTS
 * Run `python preprocessing.py` to preprocess the data
 * Run `python train.py` to train the model with hyper-parameters found in `config.py`
 * Run `python eval.py` on a test file to generate your own questions!
-
-Colab notebook running this code can be found here : [QG Model Colab](https://colab.research.google.com/drive/1Hd4G6OMjtPrGITSwWJ2wAk0pzfLfVftu?usp=sharing)
 
 # Documentation for Replication and Improvement
 ## Downloading NewsQA Dataset
