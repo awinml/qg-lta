@@ -2,10 +2,13 @@
 
 https://github.com/GauthierDmn/question_generation
 
-Original Paper: (here)[https://arxiv.org/abs/1705.00106]
-Original Github Repo For Paper: (based on OpenNMT-py) https://github.com/xinyadu/nqg
+Original Paper: https://arxiv.org/abs/1705.00106
 
-Code rewritten to be compatible with Python 3.x.
+Original Github Repo For Paper (based on OpenNMT-py): https://github.com/xinyadu/nqg
+ 
+
+
+Code has been rewritten to be compatible with Python 3.x. and Pytorch 1.8.2 LTS
 # Run the model from this repository:
 * Clone this repository
 * Create a data directory: `mkdir data` , if not already present.
