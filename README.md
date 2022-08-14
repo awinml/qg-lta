@@ -1,6 +1,10 @@
 # Neural Question Generation: Learning to Ask
 
-Colab notebook running this code can be found here : [QG Model Colab](https://colab.research.google.com/drive/1Hd4G6OMjtPrGITSwWJ2wAk0pzfLfVftu?usp=sharing) 
+Colab notebooks running this code can be found here : 
+
+[QG Model Colab Original Paper (Best Performance)](https://colab.research.google.com/drive/1F30bp_4lKZzwHszCR2fkW4A4S8PgP-eV?usp=sharing)
+
+[QG Model Colab Increased Vocabulary](https://colab.research.google.com/drive/1Hd4G6OMjtPrGITSwWJ2wAk0pzfLfVftu?usp=sharing) 
 
 Orginal Code: https://github.com/GauthierDmn/question_generation
 
