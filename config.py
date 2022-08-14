@@ -21,8 +21,8 @@ min_len_question = 5
 max_len_question = 20
 word_embedding_size = 300
 answer_embedding_size = 2
-in_vocab_size = 400000 #45000
-out_vocab_size = 400000 #45000
+in_vocab_size = 45000 #400000
+out_vocab_size = 45000 #400000 
 
 # training hyper-parameters
 num_epochs = 15
